@@ -233,7 +233,7 @@ frappe.ui.Capture = class {
 		let me = this;
 		let elements = this.$template[0].getElementsByClassName("capture-remove-btn");
 
-		elements.forEach((el) => {
+		Array.from(elements).forEach((el) => {
 			el.onclick = () => {
 				let idx = parseInt(el.getAttribute("data-idx"));
 
